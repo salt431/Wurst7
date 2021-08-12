@@ -107,9 +107,9 @@ public final class ExtraElytraHack extends Hack implements UpdateListener
 		Vec3d v = MC.player.getVelocity();
 		
 		if(MC.options.keyJump.isPressed())
-			MC.player.setVelocity(v.x, v.y + 0.08, v.z);
+			MC.player.setVelocity(v.x, v.y + 0.12, v.z);
 		else if(MC.options.keySneak.isPressed())
-			MC.player.setVelocity(v.x, v.y - 0.04, v.z);
+			MC.player.setVelocity(v.x, v.y - 0.06, v.z);
 	}
 	
 	private void controlSpeed()
