@@ -77,7 +77,7 @@ public final class BowAimbotHack extends Hack
 		new SliderSetting("Predict movement",
 			"Controls the strength of BowAimbot's\n"
 				+ "movement prediction algorithm.",
-			0.2, 0, 2, 0.01, ValueDisplay.PERCENTAGE);
+			0.2, 0, 90, 0.01, ValueDisplay.PERCENTAGE);
 	
 	private final CheckboxSetting filterPlayers = new CheckboxSetting(
 		"Filter players", "Won't attack other players.", false);
@@ -87,7 +87,7 @@ public final class BowAimbotHack extends Hack
 		new SliderSetting("Filter flying",
 			"Won't attack players that\n" + "are at least the given\n"
 				+ "distance above ground.",
-			0, 0, 2, 0.05,
+			0, 0, 90, 0.05,
 			v -> v == 0 ? "off" : ValueDisplay.DECIMAL.getValueString(v));
 	
 	private final CheckboxSetting filterMonsters = new CheckboxSetting(
