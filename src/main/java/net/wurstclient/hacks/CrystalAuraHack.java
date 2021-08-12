@@ -61,7 +61,7 @@ public final class CrystalAuraHack extends Hack implements UpdateListener
 	private final SliderSetting range = new SliderSetting("Range",
 		"Determines how far CrystalAura will reach\n"
 			+ "to place and detonate crystals.",
-		6, 1, 6, 0.05, ValueDisplay.DECIMAL);
+		6, 1, 60, 0.05, ValueDisplay.DECIMAL);
 	
 	private final CheckboxSetting autoPlace =
 		new CheckboxSetting("Auto-place crystals",
