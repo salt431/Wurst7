@@ -51,7 +51,7 @@ public final class ClickAuraHack extends Hack
 	implements UpdateListener, LeftClickListener
 {
 	private final SliderSetting range =
-		new SliderSetting("Range", 5, 1, 10, 0.05, ValueDisplay.DECIMAL);
+		new SliderSetting("Range", 5, 1, 35, 0.05, ValueDisplay.DECIMAL);
 	
 	private final EnumSetting<Priority> priority = new EnumSetting<>("Priority",
 		"Determines which entity will be attacked first.\n"
@@ -69,7 +69,7 @@ public final class ClickAuraHack extends Hack
 		new SliderSetting("Filter flying",
 			"Won't attack players that\n" + "are at least the given\n"
 				+ "distance above ground.",
-			0, 0, 2, 0.05,
+			0, 0, 35, 0.05,
 			v -> v == 0 ? "off" : ValueDisplay.DECIMAL.getValueString(v));
 	
 	private final CheckboxSetting filterMonsters = new CheckboxSetting(
