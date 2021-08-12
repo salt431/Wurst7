@@ -41,9 +41,9 @@ public final class SpiderHack extends Hack implements UpdateListener
 			return;
 		
 		Vec3d velocity = player.getVelocity();
-		if(velocity.y >= 0.2)
+		if(velocity.y >= 0.212)
 			return;
 		
-		player.setVelocity(velocity.x, 0.2, velocity.z);
+		player.setVelocity(velocity.x, 0.212, velocity.z);
 	}
 }
