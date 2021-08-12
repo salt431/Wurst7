@@ -63,7 +63,7 @@ public final class SpeedHackHack extends Hack implements UpdateListener
 		// limit speed to highest value that works on NoCheat+ version
 		// 3.13.0-BETA-sMD5NET-b878
 		// UPDATE: Patched in NoCheat+ version 3.13.2-SNAPSHOT-sMD5NET-b888
-		double maxSpeed = 0.66F;
+		double maxSpeed = 0.6654F;
 		
 		if(currentSpeed > maxSpeed)
 			MC.player.setVelocity(v.x / currentSpeed * maxSpeed, v.y,
